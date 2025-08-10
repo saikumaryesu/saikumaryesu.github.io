@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saikumar Yesu — Test Automation Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0aa7a1; /* teal */
+      --bg:#ffffff;
+      --muted:#6b7280;
+      --card:#f8f9fb;
+      --maxw:1000px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f1724;line-height:1.5}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:56px;height:56px;border-radius:8px;object-fit:cover}
+    h1{margin:0;font-size:20px}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:flex;gap:24px;align-items:center;padding:36px 0}
+    .hero-left{flex:1}
+    .hero-right{width:160px}
+    .tag{color:var(--accent);font-weight:700;margin-bottom:8px}
+    .lead{font-size:20px;margin:8px 0 16px}
+    .cta{display:inline-block;padding:10px 14px;background:var(--accent);color:white;border-radius:8px;text-decoration:none;font-weight:700}
+    .section{margin:28px 0;padding:18px;border-radius:12px;background:var(--card)}
+    .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+    .skill-card{background:white;padding:12px;border-radius:8px;box-shadow:0 1px 0 rgba(15,23,36,0.04)}
+    .skill-card h4{margin:0 0 8px;font-size:14px}
+    .exp-item{display:flex;gap:12px;margin-bottom:14px}
+    .exp-meta{min-width:120px;color:var(--muted)}
+    .exp-body{flex:1}
+    ul{margin:8px 0 0;padding-left:18px}
+    footer{padding:18px 0;color:var(--muted);font-size:14px;text-align:center}
+    /* responsive */
+    @media(max-width:700px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .hero-right{width:120px}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="assets/photo-placeholder.png" alt="Saikumar Yesu">
+        <div>
+          <h1>Saikumar Yesu</h1>
+          <div style="color:var(--muted);font-size:13px">Test Automation Engineer — Hyderabad</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <div class="tag">Test Automation Engineer | Java · Selenium · REST Assured</div>
+        <h2 style="margin:6px 0 6px">Hi there — I'm <strong>Saikumar Yesu</strong></h2>
+        <p class="lead">I build reliable automation frameworks and APIs tests for payments and banking systems. I focus on maintainability, test coverage, and shifting quality left.</p>
+        <a class="cta" href="#contact">Explore More</a>
+      </div>
+      <div class="hero-right">
+        <img src="assets/illustration-placeholder.png" alt="illustration" style="width:100%;border-radius:8px;">
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h3>Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Automation & Frameworks</h4>
+          <div>Selenium WebDriver · Playwright (familiar) · Page Object Model · PageFactory · TestNG</div>
+        </div>
+        <div class="skill-card">
+          <h4>Programming</h4>
+          <div>Java · OOPs · Collections · Multithreading (intermediate)</div>
+        </div>
+        <div class="skill-card">
+          <h4>API Testing</h4>
+          <div>REST Assured · Postman · API contract testing · JSON, XML</div>
+        </div>
+        <div class="skill-card">
+          <h4>CI / Tools</h4>
+          <div>Jenkins · Maven · Git · Jira · Confluence</div>
+        </div>
+        <div class="skill-card">
+          <h4>Databases</h4>
+          <div>SQL · MySQL · Basic DB validations</div>
+        </div>
+        <div class="skill-card">
+          <h4>Testing Types</h4>
+          <div>Functional · Regression · Integration · Non-Functional (basic)</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h3>Experience</h3>
+
+      <div class="exp-item">
+        <div class="exp-meta">Infosys Ltd<br/><span style="font-weight:700">Quality Engineering Analyst</span><br/><small style="color:var(--muted)">Jul 2021 — Present</small></div>
+        <div class="exp-body">
+          <ul>
+            <li>Worked in Banking domain — Payments (NPP Clearing, PayTo, Osko) and Fraud Management.</li>
+            <li>Designed & maintained Selenium + TestNG automation suites for critical flows and API automation using REST Assured.</li>
+            <li>Improved regression stability and reduced manual regression cycle time by introducing parallel execution and better test data management.</li>
+            <li>Awards: Leading Change (GEM) — Westpac stakeholders; Rising Star — Infosys.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- add more experiences here -->
+
+    </section>
+
+    <section id="projects" class="section">
+      <h3>Projects</h3>
+      <div style="margin-top:8px">
+        <strong>Payments Automation Framework</strong>
+        <div style="color:var(--muted);font-size:13px;margin-bottom:8px">Selenium + TestNG + Maven | REST Assured for API validations</div>
+        <div>Developed modular framework with POM, data-driven tests, and CI integration. Enabled nightly runs and early detection of critical regressions.</div>
+      </div>
+      <div style="margin-top:12px">
+        <strong>API Contract Tests</strong>
+        <div style="color:var(--muted);font-size:13px;margin-bottom:8px">REST Assured · Postman</div>
+        <div>Automated contract and integration tests for Payments APIs, validating payloads, status codes, and DB side-effects.</div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h3>About Me</h3>
+      <p>I’m a Quality Engineering Analyst from Hyderabad with 4 years of experience in testing and automation. I enjoy building reliable test frameworks and improving release quality through automation and collaboration.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h3>Contact</h3>
+      <p style="margin:6px 0"><strong>Email:</strong> youremail@example.com</p>
+      <p style="margin:6px 0"><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+      <p style="margin:6px 0"><strong>Location:</strong> Hyderabad, Telangana</p>
+      <p style="margin:6px 0"><strong>LinkedIn:</strong> https://www.linkedin.com/in/yesusaikumar10/</p>
+      <p style="margin:6px 0"><strong>GitHub:</strong> https://github.com/your-github-username</p>
+    </section>
+
+    <footer>
+      © 2025 Saikumar Yesu — Built with ❤️ • Designed for recruiters & hiring managers
+    </footer>
+  </div>
+</body>
+</html>
